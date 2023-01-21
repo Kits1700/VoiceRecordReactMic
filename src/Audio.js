@@ -55,6 +55,9 @@ function stoptoast() {
 
   }
 
+  // const btnNext = () => {
+  //   document.getElementById("recordBegin").scrollIntoView();
+  // }
 const save = () =>{
     getInfo();
     console.log(pinCode);
@@ -138,18 +141,21 @@ const onData = (recordedBlob) => {
     <label for="lname">Language Used</label>
     <input type="text" id="language" name="lastname" placeholder="Enter Language" required/>
 
-
+ 
+  
   </form>
 </div>
 
 
-        <div class = "mic">
+        <div class = "mic" >
 
         <ReactMic
           record={state.record}
           className="sound-wave"
           onStop={onStop}
           mimeType="audio/wav"
+          channelCount={1}
+          sampleRate={16000}   
           onData={onData}
          />
         </div>
@@ -157,10 +163,11 @@ const onData = (recordedBlob) => {
         <div id="starttoast">Recording Started!</div>
         <div id="stoptoast">Recording Stopped!</div>
        
-        <button class = "startrec" onClick={startRecording} type="button" disabled ={state.record}> <i  class="fa" id = "starticon">&#xf130;</i></button>
+        <button class = "startrec"id = "recordBegin" onClick={startRecording} type="button" disabled ={state.record}> <i  class="fa" id = "starticon">&#xf130;</i></button>
         <button class ="stoprec" onClick={stopRecording} type="button" disabled ={!state.record}><i class="fa" id = "stopicon">&#xf04d;</i></button>
         <button class="upload" onClick={save}><i class="fa" id = "uploadicon">&#xf093;</i></button>
-        <audio class = "stream" src={aURL} controls></audio> 
+        <audio class = "stream"  src={aURL} controls></audio> 
+       
         <Footer />
       </div>
 
