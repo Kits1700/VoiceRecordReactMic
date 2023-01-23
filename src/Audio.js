@@ -65,7 +65,7 @@ const save = () =>{
     console.log(language);
     console.log("Added info");
   const storage = getStorage();
-  const storageRef = ref(storage, `/voices/${fname}_${lname}_${pinCode}_${gender}_${language}`);
+  const storageRef = ref(storage, `/voices/${fname}_${lname}_${gender}_${pinCode}_${language}`);
 
   uploadBytes(storageRef, rec).then((snapshot) => {
     console.log('Uploaded a blob or file!');
@@ -154,9 +154,15 @@ const onData = (recordedBlob) => {
           className="sound-wave"
           onStop={onStop}
           mimeType="audio/wav"
+          strokeColor="#1684A7"
+          echoCancellation={true} // defaults -> false
+          autoGainControl={true}  // defaults -> false
+          noiseSuppression={true}
           channelCount={1}
+          bitRate={256000}  
           sampleRate={16000}   
           onData={onData}
+
          />
         </div>
         <div id="uploadtoast">Uploaded!</div>
