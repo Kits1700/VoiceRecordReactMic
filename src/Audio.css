@@ -4,18 +4,23 @@ body{
     overflow-y:visible;
     font-family: "Montserrat", sans-serif;
     margin: 0; height: 80%; 
+    font-weight: bolder;
     
     
+}
+button{
+    font-weight: 900;
 }
   
 .startrec{
     width: 30px; 
     height: 30px;
-    background-color: #66BFBF;
+    background-color: #FF4949;
     border-radius: 80%;
-    box-shadow: 0 2px rgb(158, 233, 213);
+    box-shadow: 0 2px rgb(233, 168, 158);
     font-family: "Montserrat", sans-serif;
-    transform: translate(45vw,11.1vw);
+    font-weight: 900;
+    transform: translate(46vw,12.5vw);
     border: none;
     color: white;
     padding: 20px;
@@ -35,7 +40,7 @@ body{
 
 background-color: #66BFBF;
 
-box-shadow: 0 2px rgb(158, 233, 213);
+box-shadow: 0 2px rgb(233, 168, 158);
 font-family: "Montserrat", sans-serif;
 
 border: none;
@@ -53,11 +58,11 @@ place-items: center;
 .stoprec{
     width: 30px; 
     height: 30px;
-    background-color: #66BFBF;
+    background-color: #FF4949;
     border-radius: 80%;
-    box-shadow: 0 2px rgb(158, 233, 213);
+    box-shadow: 0 2px rgb(233, 168, 158);
     font-family: "Montserrat", sans-serif;
-    transform: translate(49vw,11vw);
+    transform: translate(49vw,12.5vw);
     border: none;
     color: white;
     padding: 20px;
@@ -70,11 +75,67 @@ place-items: center;
   
    
 }
+.saverec{
+   
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:x-small;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    background-color: #FF4949;
+    font-family: "Montserrat", sans-serif;
+    transform: translate(25vw,20vw);
+ 
+    /* box-shadow: 0 2px rgb(158, 233, 213);
+    font-family: "Montserrat", sans-serif;
+    transform: translate(49vw,11vw);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: x-small;
+    margin: 4px 2px;
+    cursor: pointer; */
+}
+.uploadrec{
+   
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:x-small;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #FF4949;
+    font-family: "Montserrat", sans-serif;
+    transform: translate(14.3vw,25vw);
+ 
+    /* box-shadow: 0 2px rgb(158, 233, 213);
+    font-family: "Montserrat", sans-serif;
+    transform: translate(49vw,11vw);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: x-small;
+    margin: 4px 2px;
+    cursor: pointer; */
+}
 .upload{
     width: 10px; 
     height: 10px;
-    background-color: #66BFBF;
-    border-radius: 60%;
+    background-color: #FF4949;
     box-shadow: 0 2px rgb(158, 233, 213);
     font-family: "Montserrat", sans-serif;
     transform: translate(55vw,6.5vw);
@@ -116,8 +177,8 @@ audio{
 }
 
 button:hover {
-background-color: #66BFBF;
-opacity: 0.5;}
+background-color: #FF6363;
+opacity: 0.4;}
 /* #pincode{
     display: flex;
     flex-direction: column;
@@ -149,7 +210,7 @@ label{
     margin-right: auto;
     font-size: small;
 }
-input[type=text], select,input[placeholder] {
+#lname,#fname,#pincode,#gender,#language {
     width: 45%;
     padding: 12px 20px;
     margin-left: auto;
@@ -171,6 +232,7 @@ input[type=text], select,input[placeholder] {
     justify-content: center; */
     transform: translate(-5px,-6px);
 }
+
 #starticon{
     transform: translate(-7px,-8px);
     font-size: 20px;
@@ -189,6 +251,60 @@ input[type=text], select,input[placeholder] {
     font-size: 14px;
 
 }
+#saveicon{
+    transform: translate(-7px,-9px);
+    font-size: 16px;
+}
+.addFileBtn{
+    transform: translate(35vw,40.5vw);
+    width: 15%;
+    padding: 12px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+   
+    font-family: "Montserrat", sans-serif;
+}
+.labelfile{
+    transform: translate(36.4vw,28.5vw);
+    font-family: "Montserrat", sans-serif;
+}
+
+p{
+    font-size: 1rem;
+            font-family: serif;
+            color: #FF4949;
+         
+            animation: animate 
+                1.5s linear infinite;
+    font-family: "Montserrat", sans-serif;
+ 
+    transform: translate(45.4vw,5vw);
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+.viewcomments{
+    transform: translate(45vw,25vw);
+}
+.stopwatch{
+  
+    font-size:x-large;
+    transform: translate(46.8vw,7vw);
+}
+.last{
+    color: #FF4949;
+}
 .full{
 
 
@@ -198,7 +314,8 @@ input[type=text], select,input[placeholder] {
   overflow-x: hidden;
   overflow-y:scroll;
   width: 100%;
-  height: 60vw;
+  height: 100vw;
+  font-weight: 900;
 
 
 
@@ -208,7 +325,7 @@ input[type=text], select,input[placeholder] {
 visibility: hidden;
 min-width: 250px;
 margin-left: -125px;
-background-color: #66BFBF;
+background-color: #FF4949;
 color: #fff;
 text-align: center;
 border-radius: 2px;
@@ -222,15 +339,15 @@ font-size: 17px;
 
 #uploadtoast.show {
 visibility: visible;
--webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+-webkit-animation: fadein 0.9s, fadeout 0.9s 2.5s;
+animation: fadein 0.9s, fadeout 0.9s 2.5s;
 }
 
 #starttoast{
     visibility: hidden;
     min-width: 250px;
     margin-left: -125px;
-    background-color: #66BFBF;
+    background-color: #FF4949;
     color: #fff;
     text-align: center;
     border-radius: 2px;
@@ -241,6 +358,27 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
     bottom: 30px;
     font-size: 17px;
     }
+
+#savedtoast{
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #FF4949;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    }
+    #savedtoast.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
     
     #starttoast.show {
     visibility: visible;
@@ -252,7 +390,7 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
         visibility: hidden;
         min-width: 250px;
         margin-left: -125px;
-        background-color: #66BFBF;
+        background-color: #FF4949;
         color: #fff;
         text-align: center;
         border-radius: 2px;
@@ -268,6 +406,17 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
         visibility: visible;
         -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
         animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        .comments{
+            transform: translate(40vw,11.8vw);
+            width: 20%;
+            height: 5%;
+            justify-content: center;
+        }
+
+        #time{
+            transform: translate(47.8vw,0vw);
         }
 
 @-webkit-keyframes fadein{
@@ -298,67 +447,85 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
         transform: translate(0vw,7vw);
     }
     .startrec{
-        transform: translate(29.5vw,22.5vw);
+        transform: translate(40.5vw,21.5vw);
 
     }
     .stoprec{
-        transform: translate(41.4vw,22.5vw);
+        transform: translate(46.2vw,21.5vw);
+      
 
+    }
+    p{
+        transform: translate(37.4vw,5vw);
+    }
+
+    .saverec{
+        transform: translate(-2vw,30.5vw);
     }
     .upload{
-        transform: translate(63vw,11.5vw);
+        transform: translate(48vw,25.5vw);
 
     }
+    .addFileBtn{
+        transform: translate(17vw,70.5vw);
+        width: 55%;
+    }
+    .stopwatch{
+  
+        font-size:xx-large;
+        transform: translate(38.8vw,7.5vw);
+    }
+
+
+    .uploadrec{
+   
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:x-small;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #FF4949;
+        font-family: "Montserrat", sans-serif;
+        transform: translate(-28.5vw,41.5vw);
+     
+        /* box-shadow: 0 2px rgb(158, 233, 213);
+        font-family: "Montserrat", sans-serif;
+        transform: translate(49vw,11vw);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-small;
+        margin: 4px 2px;
+        cursor: pointer; */
+    }
+ .labelfile{
+    transform: translate(20.4vw,70.5vw);
+    font-family: "Montserrat", sans-serif;
+}
+ .savebtn{
+    transform: translate(-5vw,10vw);
+ }
+ .comments{
+    transform: translate(30vw,17.5vw);
+    width: 40%;
+ 
+ }
 
 .stream{
       
     margin: 0 auto;
-  
-    transform: translate(-5vw,0vw);
+    width: 74%;
+    transform: translate(0vw,0vw);
  }
    
- .savebtn{
-    transform: translate(-5vw,10vw);
- }
 
- .full{
-    top: 10;
-    left: 0;
-  
-    overflow-x: hidden;
-    overflow-y:scroll;
-    width: 100%;
-    height: 100vw;
-}
-}
-@media screen and (max-width: 420px) {
-
-    .mic{
-        transform: translate(0vw,7vw);
-    }
-    .startrec{
-        transform: translate(29.5vw,29.5vw);
-
-    }
-    .stoprec{
-        transform: translate(41.4vw,29.5vw);
-
-    }
-    .upload{
-        transform: translate(63vw,15.5vw);
-
-    }
-
-.stream{
-      
-    margin: 0 auto;
-  
-    transform: translate(-5vw,0vw);
- }
-   
- .savebtn{
-    transform: translate(-5vw,10vw);
- }
 .full{
     top: 10;
     left: 0;
@@ -366,50 +533,11 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
     overflow-x: hidden;
     overflow-y:scroll;
     width: 100%;
-    height: 200vw;
+    height: 250vw;
+    font-weight: 900;
+}
 }
 
-}
-
-@media (mix-width: 350px) and (max-width: 600px){
-
-    .mic{
-        transform: translate(0vw,7vw);
-    }
-    .startrec{
-        transform: translate(29.5vw,3.5vw);
-
-    }
-    .stoprec{
-        transform: translate(41.4vw,29.5vw);
-
-    }
-    .upload{
-        transform: translate(63vw,15.5vw);
-
-    }
-
-.stream{
-      
-    margin: 0 auto;
-  
-    transform: translate(-5vw,0vw);
- }
-   
- .savebtn{
-    transform: translate(-5vw,10vw);
- }
-.full{
-    top: 10;
-    left: 0;
-  
-    overflow-x: hidden;
-    overflow-y:scroll;
-    width: 100%;
-    height: 220vw;
-}
-
-}
 
 
 @media screen and (max-width: 480px) {
@@ -418,28 +546,181 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
         transform: translate(0vw,7vw);
     }
     .startrec{
-        transform: translate(29.5vw,31.5vw);
+        transform: translate(40.5vw,26.5vw);
 
     }
     .stoprec{
-        transform: translate(41.4vw,31.5vw);
+        transform: translate(46.2vw,26.5vw);
+      
 
+    }
+    p{
+        transform: translate(32.5vw,5vw);
+    }
+    .saverec{
+        transform: translate(-5.1vw,35.5vw);
     }
     .upload{
-        transform: translate(63vw,15.5vw);
+        transform: translate(48vw,25.5vw);
 
     }
+    .addFileBtn{
+        transform: translate(10vw,85.5vw);
+        width: 55%;
+    }
+
+
+    .uploadrec{
+   
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:x-small;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #FF4949;
+        font-family: "Montserrat", sans-serif;
+        transform: translate(35vw,37.5vw);
+     
+        /* box-shadow: 0 2px rgb(158, 233, 213);
+        font-family: "Montserrat", sans-serif;
+        transform: translate(49vw,11vw);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-small;
+        margin: 4px 2px;
+        cursor: pointer; */
+    }
+    .stopwatch{
+  
+        font-size:xx-large;
+        transform: translate(36.5vw,7.5vw);
+    }
+ .labelfile{
+    transform: translate(20.4vw,70.5vw);
+    font-family: "Montserrat", sans-serif;
+}
+ .savebtn{
+    transform: translate(-5vw,10vw);
+ }
+ .comments{
+    transform: translate(30vw,17.5vw);
+    width: 40%;
+ 
+ }
 
 .stream{
       
     margin: 0 auto;
-  
-    transform: translate(-5vw,0vw);
+    width: 74%;
+    transform: translate(0vw,0vw);
  }
    
+
+.full{
+    top: 10;
+    left: 0;
+    font-weight: 900!important;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    width: 100%;
+    height: 260vw;
+}
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .mic{
+        transform: translate(0vw,7vw);
+    }
+    .startrec{
+        transform: translate(37.5vw,30.5vw);
+
+    }
+    .stoprec{
+        transform: translate(43.8vw,30.5vw);
+      
+
+    }
+    .saverec{
+        transform: translate(-8.1vw,35.5vw);
+    }
+    .upload{
+        transform: translate(48vw,25.5vw);
+
+    }
+    p{
+        transform: translate(29.5vw,5vw);
+    }
+    .addFileBtn{
+        transform: translate(5vw,92.5vw);
+        width: 55%;
+    }
+
+    .stopwatch{
+  
+        font-size:xx-large;
+        transform: translate(31.5vw,8.5vw);
+    }
+
+
+    .uploadrec{
+   
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:x-small;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #FF4949;
+        font-family: "Montserrat", sans-serif;
+        transform: translate(32.1vw,37.5vw);
+     
+        /* box-shadow: 0 2px rgb(158, 233, 213);
+        font-family: "Montserrat", sans-serif;
+        transform: translate(49vw,11vw);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-small;
+        margin: 4px 2px;
+        cursor: pointer; */
+    }
+ .labelfile{
+    transform: translate(20.4vw,70.5vw);
+    font-family: "Montserrat", sans-serif;
+}
  .savebtn{
     transform: translate(-5vw,10vw);
  }
+ .comments{
+    transform: translate(30vw,17.5vw);
+    width: 40%;
+ 
+ }
+
+.stream{
+      
+    margin: 0 auto;
+    width: 74%;
+    transform: translate(0vw,0vw);
+ }
+   
+
 .full{
     top: 10;
     left: 0;
@@ -447,119 +728,94 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
     overflow-x: hidden;
     overflow-y:scroll;
     width: 100%;
-    height: 225vw;
+    height: 300vw;
+}
 }
 
-}
-
-@media screen and (max-width: 349px) {
+@media screen and (max-width: 393px) {
 
     .mic{
         transform: translate(0vw,7vw);
     }
     .startrec{
-        transform: translate(29.5vw,31.5vw);
+        transform: translate(38.5vw,32.5vw);
 
     }
     .stoprec{
-        transform: translate(41.4vw,31.5vw);
+        transform: translate(43.2vw,32.5vw);
+      
 
+    }
+    .saverec{
+        transform: translate(-10.1vw,39.5vw);
     }
     .upload{
-        transform: translate(60vw,15.5vw);
+        transform: translate(48vw,25.5vw);
 
     }
-
-.stream{
-      
-    margin: 0 auto;
-    width: 82%;
-    transform: translate(-5vw,0vw);
- }
-   
- .savebtn{
-    transform: translate(-5vw,10vw);
- }
-.full{
-    top: 10;
-    left: 0;
+    p{
+        transform: translate(27.5vw,5vw);
+    }
+    .addFileBtn{
+        transform: translate(3vw,98.5vw);
+        width: 55%;
+    }
+    .stopwatch{
   
-    overflow-x: hidden;
-    overflow-y:scroll;
-    width: 100%;
-    height: 255vw;
+        font-size:xx-large;
+        transform: translate(34.5vw,8.5vw);
+    }
+
+
+    .uploadrec{
+   
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:x-small;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #FF4949;
+        font-family: "Montserrat", sans-serif;
+        transform: translate(30.1vw,42.5vw);
+     
+        /* box-shadow: 0 2px rgb(158, 233, 213);
+        font-family: "Montserrat", sans-serif;
+        transform: translate(49vw,11vw);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-small;
+        margin: 4px 2px;
+        cursor: pointer; */
+    }
+ .labelfile{
+    transform: translate(20.4vw,70.5vw);
+    font-family: "Montserrat", sans-serif;
 }
-
-}
-@media screen and (max-width: 300px) {
-
-    .mic{
-        transform: translate(0vw,7vw);
-    }
-    .startrec{
-        transform: translate(29.5vw,28.5vw);
-
-    }
-    .stoprec{
-        transform: translate(41.4vw,28.5vw);
-
-    }
-    .upload{
-        transform: translate(56vw,5.5vw);
-
-    }
+ .savebtn{
+    transform: translate(-5vw,10vw);
+ }
+ .comments{
+    transform: translate(30vw,22.5vw);
+    width: 40%;
+ 
+ }
 
 .stream{
       
     margin: 0 auto;
-    width: 80%;
-    transform: translate(-5vw,-12vw);
+    width: 74%;
+    transform: translate(0vw,0vw);
  }
    
- .savebtn{
-    transform: translate(-5vw,10vw);
- }
-.full{
-    top: 10;
-    left: 0;
-  
-    overflow-x: hidden;
-    overflow-y:scroll;
-    width: 100%;
-    height: 270vw;
-}
 
-}
-
-
-@media screen and (max-width: 279px) {
-
-    .mic{
-        transform: translate(0vw,7vw);
-    }
-    .startrec{
-        transform: translate(29.5vw,32.5vw);
-
-    }
-    .stoprec{
-        transform: translate(41.4vw,32.5vw);
-
-    }
-    .upload{
-        transform: translate(48vw,7.5vw);
-
-    }
-
-.stream{
-      
-    margin: 0 auto;
-    width: 80%;
-    transform: translate(-5vw,-12vw);
- }
-   
- .savebtn{
-    transform: translate(-5vw,10vw);
- }
 .full{
     top: 10;
     left: 0;
@@ -570,4 +826,487 @@ animation: fadein 0.5s, fadeout 0.5s 2.5s;
     height: 300vw;
 }
 
+}
+
+@media screen and (max-width: 360px) {
+
+    .mic{
+        transform: translate(0vw,7vw);
+    }
+    .startrec{
+        transform: translate(38vw,34.5vw);
+
+    }
+    .stoprec{
+        transform: translate(43vw,34.5vw);
+      
+
+    }
+    .stopwatch{
+  
+        font-size:xx-large;
+        transform: translate(32.7vw,8.5vw);
+    }
+    p{
+        transform: translate(25.5vw,5vw);
+    }
+    .saverec{
+        transform: translate(-11.1vw,43.5vw);
+    }
+    .upload{
+        transform: translate(48vw,25.5vw);
+
+    }
+    .addFileBtn{
+        transform: translate(-2vw,108.5vw);
+        width: 55%;
+    }
+
+
+    .uploadrec{
+   
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:x-small;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #FF4949;
+        font-family: "Montserrat", sans-serif;
+        transform: translate(29.1vw,47.5vw);
+     
+        /* box-shadow: 0 2px rgb(158, 233, 213);
+        font-family: "Montserrat", sans-serif;
+        transform: translate(49vw,11vw);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-small;
+        margin: 4px 2px;
+        cursor: pointer; */
+    }
+ .labelfile{
+    transform: translate(20.4vw,70.5vw);
+    font-family: "Montserrat", sans-serif;
+}
+ .savebtn{
+    transform: translate(-5vw,10vw);
+ }
+ .comments{
+    transform: translate(30vw,22.5vw);
+    width: 40%;
+ 
+ }
+
+.stream{
+      
+    margin: 0 auto;
+    width: 74%;
+    transform: translate(0vw,0vw);
+ }
+   
+
+.full{
+    top: 10;
+    left: 0;
+  
+    overflow-x: hidden;
+    overflow-y:scroll;
+    width: 100%;
+    height: 340vw;
+}
+
+}
+@media screen and (max-width: 349px) {
+
+    .mic{
+        transform: translate(0vw,7vw);
+    }
+    .startrec{
+        transform: translate(33.5vw,32.5vw);
+
+    }
+    .stoprec{
+        transform: translate(43.2vw,32.5vw);
+      
+
+    }
+    .stopwatch{
+  
+        font-size:xx-large;
+        transform: translate(32.5vw,8.5vw);
+    }
+
+    p{
+        transform: translate(23.8vw,5vw);
+    }
+    .saverec{
+        transform: translate(-10.1vw,43.5vw);
+    }
+    .upload{
+        transform: translate(48vw,25.5vw);
+
+    }
+    .addFileBtn{
+        transform: translate(-2vw,108.5vw);
+        width: 55%;
+    }
+
+
+
+    .uploadrec{
+   
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:x-small;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #FF4949;
+        font-family: "Montserrat", sans-serif;
+        transform: translate(30.1vw,45.5vw);
+     
+        /* box-shadow: 0 2px rgb(158, 233, 213);
+        font-family: "Montserrat", sans-serif;
+        transform: translate(49vw,11vw);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-small;
+        margin: 4px 2px;
+        cursor: pointer; */
+    }
+ .labelfile{
+    transform: translate(20.4vw,70.5vw);
+    font-family: "Montserrat", sans-serif;
+}
+ .savebtn{
+    transform: translate(-5vw,10vw);
+ }
+ .comments{
+    transform: translate(30vw,22.5vw);
+    width: 40%;
+ 
+ }
+
+.stream{
+      
+    margin: 0 auto;
+    width: 74%;
+    transform: translate(0vw,0vw);
+ }
+   
+
+.full{
+    top: 10;
+    left: 0;
+  
+    overflow-x: hidden;
+    overflow-y:scroll;
+    width: 100%;
+    height: 350vw;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .mic{
+        transform: translate(0vw,7vw);
+    }
+    .startrec{
+        transform: translate(34.5vw,48.5vw);
+
+    }
+    .stoprec{
+        transform: translate(41.2vw,48.5vw);
+      
+
+    }
+    .stopwatch{
+  
+        font-size:xx-large;
+        transform: translate(31.5vw,8.5vw);
+    }
+
+    p{
+        transform: translate(21.8vw,5vw);
+    }
+    .saverec{
+        transform: translate(-14.1vw,42.5vw);
+    }
+    .upload{
+        transform: translate(48vw,25.5vw);
+
+    }
+    .addFileBtn{
+        transform: translate(6vw,114.5vw);
+        width: 65%;
+    }
+
+
+
+    .uploadrec{
+   
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:x-small;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #FF4949;
+        font-family: "Montserrat", sans-serif;
+        transform: translate(26.1vw,45.5vw);
+     
+        /* box-shadow: 0 2px rgb(158, 233, 213);
+        font-family: "Montserrat", sans-serif;
+        transform: translate(49vw,11vw);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-small;
+        margin: 4px 2px;
+        cursor: pointer; */
+    }
+ .labelfile{
+    transform: translate(20.4vw,70.5vw);
+    font-family: "Montserrat", sans-serif;
+}
+ .savebtn{
+    transform: translate(-5vw,10vw);
+ }
+ .comments{
+    transform: translate(30vw,21.5vw);
+    width: 40%;
+ 
+ }
+
+.stream{
+      
+    margin: 0 auto;
+    width: 74%;
+    transform: translate(0vw,0vw);
+ }
+   
+
+.full{
+    top: 10;
+    left: 0;
+  
+    overflow-x: hidden;
+    overflow-y:scroll;
+    width: 100%;
+    height: 350vw;
+}
+
+}
+@media screen and (max-width: 300px) {
+
+    .mic{
+        transform: translate(0vw,7vw);
+    }
+    .startrec{
+        transform: translate(34.5vw,50.5vw);
+
+    }
+    .stoprec{
+        transform: translate(41.2vw,50.5vw);
+      
+
+    }
+    p{
+        transform: translate(19.8vw,5vw);
+    }
+    .stopwatch{
+  
+        font-size:xx-large;
+        transform: translate(30.5vw,8.5vw);
+    }
+    .saverec{
+        transform: translate(-14.1vw,42.5vw);
+    }
+    .upload{
+        transform: translate(48vw,25.5vw);
+
+    }
+    .addFileBtn{
+        transform: translate(6vw,121.5vw);
+        width: 65%;
+    }
+
+
+
+    .uploadrec{
+   
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:x-small;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #FF4949;
+        font-family: "Montserrat", sans-serif;
+        transform: translate(26.1vw,45.5vw);
+     
+        /* box-shadow: 0 2px rgb(158, 233, 213);
+        font-family: "Montserrat", sans-serif;
+        transform: translate(49vw,11vw);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-small;
+        margin: 4px 2px;
+        cursor: pointer; */
+    }
+ .labelfile{
+    transform: translate(20.4vw,70.5vw);
+    font-family: "Montserrat", sans-serif;
+}
+ .savebtn{
+    transform: translate(-5vw,10vw);
+ }
+ .comments{
+    transform: translate(30vw,21.5vw);
+    width: 40%;
+ 
+ }
+
+.stream{
+      
+    margin: 0 auto;
+    width: 74%;
+    transform: translate(0vw,0vw);
+ }
+   
+
+.full{
+    top: 10;
+    left: 0;
+  
+    overflow-x: hidden;
+    overflow-y:scroll;
+    width: 100%;
+    height: 390vw;
+}
+}
+
+
+@media screen and (max-width: 280px) {
+
+    .mic{
+        transform: translate(0vw,7vw);
+    }
+    .startrec{
+        transform: translate(34.5vw,53.5vw);
+
+    }
+    .stoprec{
+        transform: translate(41.2vw,53.5vw);
+      
+
+    }
+    .stopwatch{
+  
+        font-size:xx-large;
+        transform: translate(30.3vw,8.5vw);
+    }
+    p{
+        transform: translate(17.8vw,5vw);
+    }
+    .saverec{
+        transform: translate(-14.1vw,42.5vw);
+    }
+    .upload{
+        transform: translate(48vw,25.5vw);
+
+    }
+    .addFileBtn{
+        transform: translate(6vw,121.5vw);
+        width: 65%;
+    }
+
+
+
+    .uploadrec{
+   
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:x-small;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #FF4949;
+        font-family: "Montserrat", sans-serif;
+        transform: translate(26.1vw,45.5vw);
+     
+        /* box-shadow: 0 2px rgb(158, 233, 213);
+        font-family: "Montserrat", sans-serif;
+        transform: translate(49vw,11vw);
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: x-small;
+        margin: 4px 2px;
+        cursor: pointer; */
+    }
+ .labelfile{
+    transform: translate(20.4vw,70.5vw);
+    font-family: "Montserrat", sans-serif;
+}
+ .savebtn{
+    transform: translate(-5vw,10vw);
+ }
+ .comments{
+    transform: translate(30vw,21.5vw);
+    width: 40%;
+ 
+ }
+
+.stream{
+      
+    margin: 0 auto;
+    width: 74%;
+    transform: translate(0vw,0vw);
+ }
+   
+
+.full{
+    top: 10;
+    left: 0;
+  
+    overflow-x: hidden;
+    overflow-y:scroll;
+    width: 100%;
+    height: 395vw;
+}
 }

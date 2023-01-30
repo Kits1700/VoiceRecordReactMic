@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "voicerec-a4c18"
-  }
+    "default": "voicerec-a4c18",
+    "eg": "egplag",
+    "voicerec": "voicerec-a4c18"
+  },
+  "targets": {},
+  "etags": {}
 }

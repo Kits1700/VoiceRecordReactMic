@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 .navbar {
-    background: #EAF6F6;
+    background: #252525;;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -138,7 +138,7 @@
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
-      color: black;
+      color: white;
     }
   
     .fa-times {
@@ -243,10 +243,10 @@
   
   }
 .log{
-    color: black;
+    color: white;
 }
   .nav{
-    color: black;
+    color: white;
     margin-left: 14%;
     font-size:x-large;
   }
@@ -255,6 +255,7 @@
     font-weight: lighter;
       font-family: "Montserrat", sans-serif;
       font-size: large;
+      color: white;
    
     transform: translate(33vw,1.2vw)
     
@@ -264,6 +265,7 @@
   
     .title-proj{
         transform: translate(2.8vw,0.5vw)
+        
 
     }
     
