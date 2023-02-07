@@ -1,8 +1,9 @@
 {
   "projects": {
-    "default": "voicerec-a4c18",
+    "default": "fir-data-d8ade",
     "eg": "egplag",
-    "voicerec": "voicerec-a4c18"
+    "voicerec": "voicerec-a4c18",
+    "voice-rec-respin": "fir-data-d8ade"
   },
   "targets": {},
   "etags": {}
